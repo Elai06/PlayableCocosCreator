@@ -24,10 +24,6 @@ export class Card extends cc.Component {
       this.OnContentPositionChanged,
       this
     );
-
-  }
-
-  protected start(): void {
   }
 
   startAnimation() {
@@ -61,12 +57,23 @@ export class Card extends cc.Component {
         normalDistance
       );
 
-    this.updateView(-this.content.position.x);
+      this.updateView(-this.content.position.x);
     }
-
   }
 
-  UpdateSprite(sprite: cc.SpriteFrame) {
-    this.sprite.spriteFrame = sprite;
+  UpdateSprite(sprite: cc.SpriteFrame, isAnimation: boolean) {
+    if (isAnimation) {
+
+      this.node.rotation = 0;
+      cc.tween(this.node)
+        .to(0.5, { rotationX: 90 })
+        .call(() => {
+          this.sprite.spriteFrame = sprite;
+        })
+        .to(0.5, { rotationX: 0 })
+        .start();
+    } else {
+      this.sprite.spriteFrame = sprite;
+    }
   }
 }

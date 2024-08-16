@@ -45,7 +45,7 @@ class OpenButtonUrl extends cc.Component {
   openMarket() {
     this.createLoopingScaleAnimation(this.node);
 
-    openAd();
+ //   openAd();
   }
 
   touchStart(event: cc.Event) {
