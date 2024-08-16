@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "32ffc1cf-2829-40c2-83c5-fac25947cdd4",
+  "importer": "image",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1024,
+  "height": 1024,
+  "platformSettings": {},
+  "subMetas": {
+    "pridegames_crop_top": {
+      "ver": "1.0.6",
+      "uuid": "32ffc1cf-2829-40c2-83c5-fac25947cdd4@6c48a",
+      "importer": "texture",
+      "rawTextureUuid": "32ffc1cf-2829-40c2-83c5-fac25947cdd4",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 1024,
+      "height": 1024,
+      "rawWidth": 1024,
+      "rawHeight": 1024,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

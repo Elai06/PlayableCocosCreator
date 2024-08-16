@@ -1,0 +1,40 @@
+{
+  "buildPlatform": "web-mobile",
+    "orientation": "auto",
+      "exportChannels": [
+        "AppLovin",
+        "Facebook",
+        "Google",
+        "IronSource",
+        "Liftoff",
+        "Mintegral",
+        "Moloco",
+        "Pangle",
+        "Rubeex",
+        "Tiktok",
+        "Unity"
+      ],
+        "tinify": false,
+          "tinifyApiKey": "jxQWXSDY7DRdx9NP7nZ3LWMznGXx8K0t",
+          "enableSplash": false,
+            "injectOptions": {
+    "AppLovin": {
+        "body": "<script>function onCtaClick(){var url = 'https://play.google.com/store/apps/details?id=com.pridegames.risenhero';  window.mraid.open(url)} </script>"
+    },
+    "Google": {
+      "body": "<script>if(window.mraid.getState()==='loading'){window.mraid.addEventListener('ready',onSdkReady)}else{onSdkReady()}function viewableChangeHandler(viewable){if(viewable){}}function onSdkReady(){window.mraid.addEventListener('viewableChange',viewableChangeHandler);if(window.mraid.isViewable()){onCtaClick()}}var url='ios链接';var android='https://play.google.com/store/apps/details?id=com.pridegames.risenhero';var userAgent=navigator.userAgent;if(/android/i.test(userAgent)){url=android}function onCtaClick(){window.mraid.open(url)}</script>"
+    },
+    "Unity": {
+      "body": "<script> if(window.mraid.getState()==='loading'){window.mraid.addEventListener('ready',onSdkReady)}else{onSdkReady()}function viewableChangeHandler(viewable){if(viewable){}}function onSdkReady(){window.mraid.addEventListener('viewableChange',viewableChangeHandler);if(window.mraid.isViewable()){onCtaClick()}}var url='ios链接';var android='https://play.google.com/store/apps/details?id=com.pridegames.risenhero';var userAgent=navigator.userAgent;if(/android/i.test(userAgent)){url=android}function onCtaClick(){window.mraid.open(url)}</script>"
+    },
+    "Facebook": {
+      "body": "<script>function onCtaClick(){if(typeof FbPlayableAd !=='undefined'){console.log('FBdefined');FbPlayableAd.onCTAClick();}}</script>"
+    },
+    "IronSource": {
+      "body": "<script>function onCtaClick(){if(typeof FbPlayableAd !=='undefined'){console.log('FBdefined');FbPlayableAd.onCTAClick();}}</script>"
+    },
+    "Mintegral": {
+      "body": "<script>function onCtaClick(){window.install && window.install(); var url = 'https://play.google.com/store/apps/details?id=com.pridegames.risenhero';var androidUrl = 'https://play.google.com/store/apps/details?id=com.pridegames.risenhero'; window.open(androidUrl,('_blank'))} function gameStart() {window.gameReady && window.gameReady();} function gameClose() { window.gameEnd && window.gameEnd(); } function gameFinish() {window.gameEnd && window.gameEnd();}</script>"
+    }
+  }
+}
