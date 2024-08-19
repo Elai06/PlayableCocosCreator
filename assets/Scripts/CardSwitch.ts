@@ -14,14 +14,14 @@ export default class CardSwitch extends cc.Component {
   private selectedCard: Card;
 
   start() {
-    this.button.node.on("click", this.OnClick, this);
+  //  this.button.node.on("click", this.OnClick, this);
 
     this.FillCards(false);
   }
 
   OnClick() {
     if (this.cardsIndex >= this.mockDataFeeder.cards.length - 1) {
-      this.openAd();
+  //    this.openAd();
     } else {
       this.cardsIndex++;
       this.UpdateIndex(this.selectedCard);

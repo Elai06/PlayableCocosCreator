@@ -1,8 +1,5 @@
 ﻿const { ccclass, property } = cc._decorator;
 
-const androidMarketUrl =
-  "https://play.google.com/store/apps/details?id=com.pridegames.risenhero";
-
 @ccclass("OpenButtonUrl")
 class OpenButtonUrl extends cc.Component {
   @property() private minScale: number = 1;
@@ -45,7 +42,7 @@ class OpenButtonUrl extends cc.Component {
   openMarket() {
     this.createLoopingScaleAnimation(this.node);
 
- //   openAd();
+    openAd();
   }
 
   touchStart(event: cc.Event) {
@@ -72,8 +69,5 @@ function openAd() {
     if (typeof window["gameFinish"] === "function") {
         (window as any).gameFinish();
     }
-  } else {
-    console.log("onCtaClick function is not available.");
-    window.open(androidMarketUrl, "_blank");
-  }
+  } 
 }

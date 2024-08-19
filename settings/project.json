@@ -33,15 +33,13 @@
     "Toggle",
     "TiledMap",
     "VideoPlayer",
-    "Widget",
     "3D Primitive",
     "SubContext",
     "TypeScript Polyfill",
     "3D Physics/cannon.js",
     "3D Physics/Builtin",
     "3D Physics Framework",
-    "3D Particle",
-    "SafeArea"
+    "3D Particle"
   ],
   "preview-port": 7456,
   "design-resolution-width": 1080,

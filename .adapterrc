@@ -19,13 +19,13 @@
           "enableSplash": false,
             "injectOptions": {
     "AppLovin": {
-        "body": "<script>function onCtaClick(){var url = 'https://play.google.com/store/apps/details?id=com.pridegames.risenhero';  window.mraid.open(url)} </script>"
+      "body": "<script>function onCtaClick(){var url = 'https://play.google.com/store/apps/details?id=com.serbull.epochwars&gl=us&hl=en';  window.mraid.open(url)} </script>"
     },
     "Google": {
-      "body": "<script>if(window.mraid.getState()==='loading'){window.mraid.addEventListener('ready',onSdkReady)}else{onSdkReady()}function viewableChangeHandler(viewable){if(viewable){}}function onSdkReady(){window.mraid.addEventListener('viewableChange',viewableChangeHandler);if(window.mraid.isViewable()){onCtaClick()}}var url='ios链接';var android='https://play.google.com/store/apps/details?id=com.pridegames.risenhero';var userAgent=navigator.userAgent;if(/android/i.test(userAgent)){url=android}function onCtaClick(){window.mraid.open(url)}</script>"
+      "body": "<script>function onCtaClick(){;var clickTag = 'https://play.google.com/store/apps/details?id=com.serbull.epochwars&gl=us&hl=en'; window.open(clickTag); }</script>"
     },
     "Unity": {
-      "body": "<script> if(window.mraid.getState()==='loading'){window.mraid.addEventListener('ready',onSdkReady)}else{onSdkReady()}function viewableChangeHandler(viewable){if(viewable){}}function onSdkReady(){window.mraid.addEventListener('viewableChange',viewableChangeHandler);if(window.mraid.isViewable()){onCtaClick()}}var url='ios链接';var android='https://play.google.com/store/apps/details?id=com.pridegames.risenhero';var userAgent=navigator.userAgent;if(/android/i.test(userAgent)){url=android}function onCtaClick(){window.mraid.open(url)}</script>"
+      "body": "<script> if(window.mraid.getState()==='loading'){window.mraid.addEventListener('ready',onSdkReady)}else{onSdkReady()}function viewableChangeHandler(viewable){if(viewable){}}function onSdkReady(){window.mraid.addEventListener('viewableChange',viewableChangeHandler);if(window.mraid.isViewable()){onCtaClick()}}var url='ios链接';var android='https://play.google.com/store/apps/details?id=com.serbull.epochwars&gl=us&hl=en';var userAgent=navigator.userAgent;if(/android/i.test(userAgent)){url=android}function onCtaClick(){window.mraid.open(url)}</script>"
     },
     "Facebook": {
       "body": "<script>function onCtaClick(){if(typeof FbPlayableAd !=='undefined'){console.log('FBdefined');FbPlayableAd.onCTAClick();}}</script>"
@@ -34,7 +34,7 @@
       "body": "<script>function onCtaClick(){if(typeof FbPlayableAd !=='undefined'){console.log('FBdefined');FbPlayableAd.onCTAClick();}}</script>"
     },
     "Mintegral": {
-      "body": "<script>function onCtaClick(){window.install && window.install(); var url = 'https://play.google.com/store/apps/details?id=com.pridegames.risenhero';var androidUrl = 'https://play.google.com/store/apps/details?id=com.pridegames.risenhero'; window.open(androidUrl,('_blank'))} function gameStart() {window.gameReady && window.gameReady();} function gameClose() { window.gameEnd && window.gameEnd(); } function gameFinish() {window.gameEnd && window.gameEnd();}</script>"
+      "body": "<script>function onCtaClick(){window.install && window.install(); } function gameStart() {window.gameReady && window.gameReady();} function gameClose() { window.gameEnd && window.gameEnd(); } function gameFinish() {window.gameEnd && window.gameEnd();}</script>"
     }
   }
 }
