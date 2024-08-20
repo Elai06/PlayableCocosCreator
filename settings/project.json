@@ -10,7 +10,6 @@
   "excluded-modules": [
     "Audio",
     "AudioSource",
-    "Animation",
     "Collider",
     "Dynamic Atlas",
     "DragonBones",

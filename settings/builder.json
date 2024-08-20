@@ -1,9 +1,9 @@
 {
   "title": "PlayableTest2_4_10",
   "packageName": "org.cocos2d.demo",
-  "startScene": "7ca9d571-6520-4f8e-ac80-bd913c645db0",
+  "startScene": "b02337c9-61fd-44f7-beff-3a7fbba8f981",
   "excludeScenes": [
-    "b02337c9-61fd-44f7-beff-3a7fbba8f981"
+    "7ca9d571-6520-4f8e-ac80-bd913c645db0"
   ],
   "orientation": {
     "landscapeRight": true,

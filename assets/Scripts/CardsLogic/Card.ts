@@ -24,6 +24,8 @@ export class Card extends cc.Component {
       this.OnContentPositionChanged,
       this
     );
+
+    this.node.rotation = 0;
   }
 
   startAnimation() {
@@ -63,14 +65,13 @@ export class Card extends cc.Component {
 
   UpdateSprite(sprite: cc.SpriteFrame, isAnimation: boolean) {
     if (isAnimation) {
-
       this.node.rotation = 0;
       cc.tween(this.node)
-        .to(0.5, { rotationX: 90 })
+        .to(0.5, { rotationY: 90 })
         .call(() => {
           this.sprite.spriteFrame = sprite;
         })
-        .to(0.5, { rotationX: 0 })
+        .to(0.75, { rotationY: 0 }, {easing: 'bounceOut'})
         .start();
     } else {
       this.sprite.spriteFrame = sprite;
